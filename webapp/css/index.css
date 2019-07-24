@@ -1,0 +1,461 @@
+*{
+    box-sizing: border-box;
+}
+
+body,h1{
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* carousel next,preview button */
+#articleBox{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 1218px;
+}
+#carouselExampleFade{
+    width: 65%;
+    display: inline-block;
+    background-color: black;
+}
+
+.arrow{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 10px;
+}
+ /* menubar */
+#menubar{
+    width: 1218px;
+    height: 150px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#menubar h1{
+    font-size: 32px;
+    padding: 20px 0px;
+    color: #8c1515;
+    height: 80px;
+}
+
+#centerMenu{
+    text-align: center;
+}
+
+.mainMenu{
+    padding: 0px;
+    margin: 0px;
+    z-index: 1;
+    height: 70px;
+    display: inline-block;
+}
+
+.mainMenu li{
+    position: relative;
+}
+
+.mainMenu>li{
+    float: left;
+    list-style: none;
+    text-align: center;
+    width: 100px;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+.mainMenu>li:hover{
+    border-top: 2px solid rgb(98, 21, 21);
+    color: rgb(98, 21, 21);
+}
+
+.mainMenu>li:hover>a{
+    color: #8c1515;
+}
+
+.mainMenu>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mainMenu>li>a span{
+    color: gray;
+    font-weight: normal;
+    font-size: 12px;
+}
+/* dropMenu */
+.dropMenu{
+    position: relative;
+    right: 20px;
+    top: 20px;
+    text-align: left;
+    list-style: none;
+    width: 199px;
+    display: none;
+    padding: 0;
+}
+.dropMenu li{
+    width: 200px;
+    border: 1px solid gray;
+    padding: 5px 10px;
+    background-color: white;
+    z-index: 2;
+}
+
+.dropMenu li a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.mainMenu li:hover .dropMenu{
+    display: block;
+}
+
+.mainMenu li .dropMenu li:hover{
+    background-color: #8c1515;
+}
+
+.mainMenu li .dropMenu li:hover a{
+    color: white;
+}
+
+.carousel-inner{
+    z-index: 1;
+}
+
+.underLine{
+    width: 1218px;
+    border: 2px solid #8c1515;
+}
+
+/* loginBox */
+#loginBox{
+    text-align: center;
+    width: 33%;
+    height: 120px;
+    background-color: #f7f8fa;
+    position: absolute;
+    top: 0;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+#loginBox a{
+    margin-left: 15px;
+    margin-right: 15px;
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#loginBox a:hover{
+    text-decoration: underline;
+}
+
+#openLoginPageButton{
+    border: none;
+    outline: none;
+    background-color: #8c1515;
+    width: 90%;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    padding: 2px 0px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#openLoginPageButton:hover{
+    background-color: rgb(98, 21, 21);
+}
+.mobile{
+    display: none;
+}
+#mobile-openLoginPage{
+    display: none;
+    text-decoration: none;
+    margin-left: 90px;
+    color: white;
+    background-color: #8c1515;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: absolute;
+}
+#mobile-openLoginPage:hover{
+    background-color: rgb(98, 21, 21);
+}
+
+
+/* planer Box */
+#planerBox{
+    display: inline-block;
+    position: absolute;
+    top: 130px;
+    width: 33%;
+    height: 170px;
+    margin-left: 20px;
+    overflow: auto;
+    color: gray;
+}
+
+#planerBox ul{
+    margin-top: 20px;
+    text-align: left;
+}
+
+#planerBox ul li{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* notice carousel */
+#noticeCarousel{
+    background-color: #f7f8fa;
+    width: 1218px;
+    margin-top: 10px;
+    height: 60px;
+}
+#noticeCarousel span{
+    text-align: center;
+    display: inline-block;
+    height: 60px;
+    width: 25%;
+    font-size: 20px;
+    color: white;
+    background-color: #8c1515;
+    line-height: 60px;
+}
+#noticeCarousel ul{
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* notice Board */
+#noticeArticle{
+    margin-top: 50px;
+    width: 65%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.noticeArticleButton{
+    height: 55px;
+    position: relative;
+}
+
+.noticeArticleButton button{
+    position: relative;
+    width: 31%;
+    height: 55px;
+    outline: none;
+    background-color: #f7f8fa;
+    border-bottom: 0px solid gray;
+    border-right: 1px solid #f7f8fa;
+}
+
+.noticeArticleButton button:first-child{
+    border-left: 1px solid #f7f8fa;
+}
+
+.noticeArticleButton button:nth-child(2){
+    right: 6px;
+}
+
+.noticeArticleButton button:nth-child(3){
+    right: 12px;
+}
+
+.noticeArticleButton button:last-child{
+    border: 1px solid darkgray;
+    background-color: white;
+    position: absolute;
+    width: 8%;
+    right: 0px;;
+    top: 0px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #8c1515;
+}
+
+#noticeArticle ul{
+    padding: 25px 40px;
+}
+
+#noticeArticle ul li{
+    color: gray;
+    weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#qnaList, #faqList{display: none;}
+
+/* ??? */
+#moveFreeBoard{
+    width: 33%;
+    height: 115px;
+    position: absolute;
+    right: 0px;
+    top: 425px;
+    text-align: center;
+}
+/* 장난이므로 변경하세요 */
+#tanos{
+    width: 33%;
+    height: 115px;
+    background-color: #8c1515;
+    position: absolute;
+    right: 0px;
+    top: 560px;
+}
+
+#moveFreeBoard button, #tanos button{
+    width: 100%;
+    height: 115px;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 28px;
+    background-color: #8c1515;
+    padding-bottom: 15px;
+}
+
+#moveFreeBoard span{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+
+
+/* tablet */
+@media(min-width: 768px) and (max-width: 1024px){
+    #articleBox{left: 150px; width: 70%;}
+    #carouselExampleFade{width: 90%;}
+    #menubar{left: 0px; height: 105px; width: 90%;}
+    #menubar h1{
+        margin-bottom: 50px;
+    }
+    #menubar ul li{
+        float: none;
+        width: 200px;
+        border-top: solid 1px gray;
+    }
+    #menubar ul li:last-child{border-bottom: solid 1px gray;}
+    .mainMenu>li:hover{
+        border-top: solid 1px gray;
+        background-color: #8c1515;
+        height: 70px;
+    }
+    .mainMenu>li:hover>a{color: white;}
+    .mainMenu>li:hover>a>span{color: white;}
+    #centerMenu{text-align: left; width: 80%;}
+    .underLine{display: none;}
+
+    #loginBox{
+        position: relative;
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 90%;
+    }
+    #planerBox{
+        top: 460px;
+        left: 0;
+        margin-left: 0px;
+        width: 90%;
+    }
+    #noticeCarousel{
+        position: absolute;
+        top: 630px;
+        width: 90%;
+    }
+    #noticeCarousel ul{
+        font-size: 14px;
+    }
+    /* dropMenu */
+    .dropMenu{
+        text-align: center;
+        right: 0;
+        top: -59px;
+        left: 190px;
+    }
+    .dropMenu li{
+        padding: 10px 0px;
+    }
+}
+/* mobile */
+@media(min-width: 320px) and (max-width: 767px){
+    body{
+        width: 100%;
+    }
+    h1{
+      margin-bottom: 50px;
+    }
+    .underLine{
+      display: none;
+    }
+    #menubar{
+        width: 100%;
+        display: inline-block;
+    }
+    #menubar h1{
+        display: inline-block;
+    }
+    .mainMenu{
+        display: none;
+    }
+    .mobile>li{
+      padding: 0px;
+      border: 1px solid gray;
+    }
+    .mobile>li>a{
+      padding: 10px;
+    }
+    .mobile>li>a>span{
+      padding: 0px 10px;
+    }
+    .mobile{
+        display: block;
+    }
+    .dropMenu{
+        position: static;
+    }
+    .mainMenu li{
+        text-align: left;
+    }
+    .mainMenu li:hover{
+        background-color: #8c1515;
+        height: auto;
+    }
+    .mainMenu>li:hover>a{color: white;}
+    .mainMenu>li:hover>a>span{color: white;}
+    .mainMenu li:hover .dropMenu{
+        display: none;
+    }
+    #articleBox, #loginBox, #planerBox{
+        display: none;
+    }
+    .dropMenu li a{
+        margin-left: 70px;
+    }
+    #menubar ul li, .dropMenu{
+        width: 100%;
+    }
+    #mobile-openLoginPage{
+        display: inline-block;
+        top: 20px;
+        right: 20px;
+    }
+}

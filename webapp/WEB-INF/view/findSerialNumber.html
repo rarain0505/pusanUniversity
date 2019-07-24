@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/login.css">
+        <title>학번 찾기</title>
+    </head>
+    <body>
+        <article class="findArticle">
+            <form class="findForm" action="#" method="#">
+                <h1>학번 찾기</h1>
+                <input type="text" name="name" placeholder="이름" maxlength="4" onkeypress="hangul();">
+                <select name="year">
+                    <option>년</option>
+                </select>
+                <select name="month">
+                    <option>월</option>
+                </select>
+                <select name="day">
+                    <option>일</option>
+                </select>
+                <br>
+                <button type="button" name="findSerialNumberButton" id="findSerialNumberButton">학번 찾기</button>
+                <button type="button" onClick='self.close()'>취소</button>
+            </form>
+        </article>
+        <script src="../../jquery/jquery-3.3.1.min.js"></script>
+        <script src="../js/login.js"></script>
+    </body>
+</html>
