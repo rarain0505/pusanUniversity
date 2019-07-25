@@ -29,11 +29,7 @@ public class LoginController {
 		int loginInfo = loginService.login(loginVO);
 		if(loginInfo==1) {
 			return "/main/html/index.jsp";
-		}
-		if(loginInfo==1) {
-			return "/main/html/index.jsp";
-		}
-		
+		}		
 		else if(loginInfo==0) {
 			return "비밀번호가 틀린 로그인페이지";
 		}
